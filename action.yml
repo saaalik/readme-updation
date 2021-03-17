@@ -12,9 +12,9 @@ jobs:
     steps:
       - uses: actions/checkout@master
 
-      - uses: saaalik/readme-updation@master
+      - uses: saaalik/readme-updation@main
         env:
-          GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secret.GITHUB_TOKEN }}
         with:
           template: "SCRIPTS_TEMPLATE.md.tpl"
           writeTo: "SCRIPTS.md"
